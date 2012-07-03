@@ -42,6 +42,7 @@ $plugin_path = plugin_dir_path($file);
 
 
 $final='
+<script>jQuery(document).ready(function(e) { tuomenuLoadMenu(); }); </script>
 <link rel="stylesheet" type="text/css" href="http://www.tuomenu.com/system/home.css" />
 <link rel="stylesheet" type="text/css" href="http://www.tuomenu.com/system/embed.css" />
 <input value="'.$url.'" id="tuomenuUrlInfo" readonly="readonly" type="hidden" /><div style="width:100%" id="tuomenuFrameContent"></div>';
@@ -52,4 +53,3 @@ return $final;
 add_shortcode( 'tuomenu', 'tuomenu_iframe' );
 
 ?>
-

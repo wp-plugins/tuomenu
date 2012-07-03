@@ -1,5 +1,6 @@
-jQuery(document).ready(function(e) {
-   jQuery.ajax({
+function tuomenuLoadMenu(){
+	
+	   jQuery.ajax({
 		 url:"http://www.tuomenu.com/include.php?url="+jQuery('#tuomenuUrlInfo').val(),
 		 dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
 		 success:function(json){
@@ -45,4 +46,4 @@ jQuery(document).ready(function(e) {
 		 }
 	});
 
-});
+}
