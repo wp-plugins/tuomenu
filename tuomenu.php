@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Tuomenu menu
-Version: 1.0
+Version: 1.0.1
 Description: Inserisci il menu della tua scheda direttamente sul tuo blog. Includi il tag [tuomenu url="url-tuo-ristorante"] nella pagina desiderata, tutto qui.
 Author: Tuomenu at tuomenu.com
 Author URI: http://tuomenu.com
