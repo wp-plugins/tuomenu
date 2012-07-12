@@ -22,7 +22,7 @@ jQuery(document).ready(function(e) {
 		topMenuBtns=topMenuBtns+'</ul></div><div id="ristoMenuBigBox" style=""><p style="clear:both;padding:0;margin:0;">&nbsp;</p><div id="ristoMenuTableSection"><table id="ristoMenuTable" cellpadding="0" cellspacing=""><colgroup><col id="ristoMenuTableIcon" /><col id="ristoMenuTableName" /><col id="ristoMenuTablePrice" /></colgroup>';
 		
 		
-				
+			if(json['empty']!=''){topMenuBtns = topMenuBtns + json['empty'];}
 			if(json['cat1']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat1']+'</td></tr>' + json['cat1'];}
 			if(json['cat2']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat2']+'</td></tr>' + json['cat2'];}
 			if(json['cat3']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat3']+'</td></tr>' + json['cat3'];}
@@ -67,8 +67,9 @@ function loadDifferentMenu(menuTipo , menuNumero){
 			 
 			 if(json['error']!=''){jQuery('#tuomenuFrameContent').html('Tuomenu Plugin : '+json['error']); exit();}
 			
-			var topMenuBtns='';
-				
+			var topMenuBtns=json['colgroup'];
+			
+			if(json['empty']!=''){topMenuBtns = topMenuBtns + json['empty'];}
 			if(json['cat1']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat1']+'</td></tr>' + json['cat1'];}
 			if(json['cat2']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat2']+'</td></tr>' + json['cat2'];}
 			if(json['cat3']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat3']+'</td></tr>' + json['cat3'];}
