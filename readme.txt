@@ -26,10 +26,12 @@ L'installazione del plugin è semplicissima
 
 == Changelog ==
 
+= 1.2.1 =
+Sistemato un problemino con il Cufon Replacement.
 = 1.2 =
-*Aggiornato il plugin per attivare le categorie modificabili dei ristoranti ed includere la Carta dei Vini
+Aggiornato il plugin per attivare le categorie modificabili dei ristoranti ed includere la Carta dei Vini
 
 = 1.0 =
-*prima versione creata in assoluto
+prima versione creata in assoluto
 
 

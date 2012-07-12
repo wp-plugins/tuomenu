@@ -37,7 +37,7 @@ jQuery(document).ready(function(e) {
 		
 		topMenuBtns = topMenuBtns + '</table></div><p style="clear:both;">&nbsp;</p></div></div></div></div></div>';
 		jQuery('#tuomenuFrameContent').append(topMenuBtns);
-		Cufon.replace('h1');
+		Cufon.replace('#ristoMenuTable h1');
 
 		 },
 		 error:function(){
@@ -81,7 +81,7 @@ function loadDifferentMenu(menuTipo , menuNumero){
 			if(json['cat10']!=''){topMenuBtns = topMenuBtns + '<tr><td colspan="3" style="text-align:left;">'+json['valcat10']+'</td></tr>' + json['cat10'];}
 			
 		jQuery('#ristoMenuTable').html(topMenuBtns);
-		Cufon.replace('h1');
+		Cufon.replace('#ristoMenuTable h1');
 
 		 },
 		 error:function(){
