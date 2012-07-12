@@ -15,18 +15,9 @@ Author URI: http://tuomenu.com
 //include script
 function tuomenu_add_resize_script() {
 	wp_enqueue_script('jquery');
-	wp_enqueue_script(
-		'cufon_script',
-		plugins_url('/cufon.js', __FILE__)
-	);
-	wp_enqueue_script(
-		'jenna_sue_font',
-		plugins_url('/Jenna_Sue_400.font.js', __FILE__)
-	);	
-	wp_enqueue_script(
-		'tuomenu_resize',
-		plugins_url('/tuomenu_resize.js', __FILE__)
-	);
+	wp_enqueue_script('cufon' , plugins_url('/cufon.js', __FILE__));
+	wp_enqueue_script('Jenna_Sue_400.font',	plugins_url('/Jenna_Sue_400.font.js', __FILE__));	
+	wp_enqueue_script('tuomenu_resize',	plugins_url('/tuomenu_resize.js', __FILE__));
 	
 }    
  
