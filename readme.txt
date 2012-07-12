@@ -7,7 +7,7 @@ Tested up to: 3.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Inserisci il menu della tua scheda direttamente sul tuo blog. Includi il tag [tuomenu url="url-tuo-ristorante"] nella pagina desiderata.
+Inserisci il menu della tua scheda direttamente sul tuo blog. Includi il tag [tuomenu url="url-tuo-ristorante"] nella pagina desiderata, tutto qui.
 
 == Description ==
 
@@ -25,6 +25,9 @@ L'installazione del plugin è semplicissima
 1. Inserisci [tuomenu url="url-tuo-ristorante"] nella pagina dove vuoi mostrare il tuo menu.
 
 == Changelog ==
+
+= 1.2 =
+*Aggiornato il plugin per attivare le categorie modificabili dei ristoranti ed includere la Carta dei Vini
 
 = 1.0 =
 *prima versione creata in assoluto

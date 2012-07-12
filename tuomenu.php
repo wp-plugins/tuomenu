@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Tuomenu menu
-Version: 1.0.1
-Description: Inserisci il menu della tua scheda direttamente sul tuo blog. Includi il tag [tuomenu url="url-tuo-ristorante"] nella pagina desiderata, tutto qui.
+Version: 1.2
+Description: Inserisci il menu della tua scheda direttamente sul tuo blog. Includi il tag [tuomenu url="url-tuo-ristorante"] nella pagina desiderata.
 Author: Tuomenu at tuomenu.com
 Author URI: http://tuomenu.com
 */
@@ -16,9 +16,18 @@ Author URI: http://tuomenu.com
 function tuomenu_add_resize_script() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script(
+		'cufon_script',
+		plugins_url('/cufon.js', __FILE__)
+	);
+	wp_enqueue_script(
+		'jenna_sue_font',
+		plugins_url('/Jenna_Sue_400.font.js', __FILE__)
+	);	
+	wp_enqueue_script(
 		'tuomenu_resize',
 		plugins_url('/tuomenu_resize.js', __FILE__)
 	);
+	
 }    
  
 add_action('wp_enqueue_scripts', 'tuomenu_add_resize_script');
@@ -42,9 +51,8 @@ $plugin_path = plugin_dir_path($file);
 
 
 $final='
-<script>jQuery(document).ready(function(e) { tuomenuLoadMenu(); }); </script>
-<link rel="stylesheet" type="text/css" href="http://www.tuomenu.com/system/home.css" />
-<link rel="stylesheet" type="text/css" href="http://www.tuomenu.com/system/embed.css" />
+<link rel="stylesheet" type="text/css" href="http://www.tuomenu.com/system/css/home.css" />
+<link rel="stylesheet" type="text/css" href="http://www.tuomenu.com/system/css/embed.css" />
 <input value="'.$url.'" id="tuomenuUrlInfo" readonly="readonly" type="hidden" /><div style="width:100%" id="tuomenuFrameContent"></div>';
 
 return $final;
@@ -53,3 +61,4 @@ return $final;
 add_shortcode( 'tuomenu', 'tuomenu_iframe' );
 
 ?>
+
